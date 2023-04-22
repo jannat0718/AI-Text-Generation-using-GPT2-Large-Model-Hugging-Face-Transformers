@@ -19,7 +19,7 @@ The objective of the project is to provide users with assistance in their deep l
   
   There are four main versions of GPT-2 available in the Hugging Face Transformers library:
   
-    a. gpt2-small: The smallest version, with 117 million parameters.
+    a. **gpt2-small:** The smallest version, with 117 million parameters.
     b. gpt2-medium: The medium-sized version, with 345 million parameters.
     c. gpt2-large: The large version, with 774 million parameters.
     d. gpt2-xl: The largest version, with 1.5 billion parameters.
