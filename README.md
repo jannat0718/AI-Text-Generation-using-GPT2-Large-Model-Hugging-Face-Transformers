@@ -1,8 +1,13 @@
 ## Leveraging GPT2-xl for Deep Learning Query Assistance
 
+**Introduction:**
+
+This project aims to build a user-friendly interface for text generation using the GPT-2 XL pre-trained model from the Hugging Face Transformers library. Gradio, a popular library for creating interactive machine learning interfaces, is used to build the web-based user interface. The objective of this project is to enable users to input text prompts and generate meaningful, coherent, and context-aware responses using the GPT-2 XL model.
+
+
 **Objective:**
 
-The objective of the project is to provide users with assistance in their deep learning inquiries by utilizing the GPT-2 language model. The system processes the input query and generates relevant and informative responses using the GPT-2 model, with the aim to improve the user's understanding of deep learning concepts.
+The objective of the project is to provide users with assistance in their deep learning inquiries by utilizing the GPT-2 language model. The system processes the input query and generates relevant and informative responses using the GPT-2 model, with the aim to improve the user's understanding of deep learning concepts. Moreover,another goal of this project is to create a simple and effective interface that allows users to experience the capabilities of the GPT-2 XL model for text generation. It demonstrates how the model can be utilized to generate contextually appropriate and coherent text based on the user's input.
 
 **What is GPT-2 and how does it work?**
 
@@ -11,6 +16,15 @@ The objective of the project is to provide users with assistance in their deep l
   During pre-training, the model learns to predict the next word in a sequence of text given all the previous words. This process is repeated over and over again, allowing the model to learn the patterns and structure of language. After pre-training, GPT-2 can be fine-tuned on specific tasks by providing it with a smaller amount of task-specific data. During fine-tuning, the model learns to adapt to the specific task by adjusting its weights and biases. Once GPT-2 has been pre-trained and fine-tuned, it can generate human-like text by predicting the most likely next word(s) given an input sequence of text. The model generates text one word at a time, using a process called "autoregression." Autoregression means that the model generates each word based on all the previous words it has generated, using a probability distribution to choose the most likely next word. 
   
   GPT-2 has been used in a variety of natural language processing tasks, including language translation, text summarization, and question-answering. A paper by Keskar et al. (2019) explores the performance of GPT-2 on language translation tasks, and finds that the model outperforms previous state-of-the-art models on several benchmark datasets.
+  
+  There are four main versions of GPT-2 available in the Hugging Face Transformers library:
+  
+    a. gpt2-small: The smallest version, with 117 million parameters.
+    b. gpt2-medium: The medium-sized version, with 345 million parameters.
+    c. gpt2-large: The large version, with 774 million parameters.
+    d. gpt2-xl: The largest version, with 1.5 billion parameters.
+    
+Each version differs in terms of the number of parameters and overall model size. As the model size increases, it typically results in better performance in terms of text generation quality and contextual understanding. However, larger models also demand more computational resources and can be slower to generate text compared to smaller versions.
   
 **Step-by-step Process:**
 
