@@ -1,4 +1,4 @@
-## Leveraging GPT-2 for Deep Learning Query Assistance
+## Leveraging GPT2-xl for Deep Learning Query Assistance
 
 **Objective:**
 
