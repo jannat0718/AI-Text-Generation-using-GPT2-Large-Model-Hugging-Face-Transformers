@@ -19,7 +19,7 @@ The objective of the project is to provide users with assistance in their deep l
   
   There are four main versions of GPT-2 available in the Hugging Face Transformers library:
   
-    a. gpt2-small:** The smallest version, with 117 million parameters.
+    a. gpt2-small: The smallest version, with 117 million parameters.
     b. gpt2-medium: The medium-sized version, with 345 million parameters.
     c. gpt2-large: The large version, with 774 million parameters.
     d. gpt2-xl: The largest version, with 1.5 billion parameters.
@@ -28,31 +28,20 @@ Each version differs in terms of the number of parameters and overall model size
 
 **Step-by-step Process:**
 
-  a. **Install the required package:** Installed the 'transformers' package using the command !pip3 install transformers.
+  a. **Install and Import Dependencies:** The necessary packages, such as transformers and Gradio, are installed using pip. After installation, the required libraries are imported into the project.
 
-  b. **Import necessary libraries and load the GPT-2 model:** Imported GPT2LMHeadModel and GPT2Tokenizer from the transformers library.
+  b. **Load Pre-trained Model and Tokenizer:** The GPT-2 XL model and its corresponding tokenizer are loaded using the Hugging Face Transformers library. The tokenizer is responsible for encoding the input text into tokens, which the model will use to generate new sequences. The generated sequences will then be decoded back into words.
 
-  c. **Loaded the GPT-2 large model and tokenizer with the following commands:**
+  c. **Encoding and Decoding:** The input sentence is encoded into tokens using the tokenizer, and the model is used to generate a new sequence of tokens based on these inputs. The generated sequence is then decoded back into words to produce the final generated text.
   
-        i. tokenizer = GPT2Tokenizer.from_pretrained('gpt2-large')
+  d. **Text Generator Function:** A function named 'generate_text' is created to handle the encoding, model generation, and decoding steps mentioned above. This function accepts a text prompt as input and returns the generated text based on the input.
         
-        ii. model = GPT2LMHeadModel.from_pretrained('gpt2-large', pad_token_id=tokenizer.eos_token_id).
-  
-  d. **Preprocess the input sentence:** 
-  
-        i. Tokenized the user's input query, for example: "where should I learn deep learning?" 
-        
-        ii. Encoded the tokenized input using the GPT-2 tokenizer, creating a tensor as follows:
-        input_ids = tokenizer.encode(sentence, return_tensors='pt').
-        
-  e. **Generate the model's response:** Passed the input tensor to the GPT-2 model's generatefunction with specific parameters such as max_length, num_beams, no_repeat_ngram_size, and early_stopping.
-  Foe example, output = model.generate(input_ids, max_length=100, num_beams=5, no_repeat_ngram_size=2, early_stopping=True).
+  e. **Gradio Interface:** A Gradio interface is constructed using the 'generate_text' function, a Textbox input component for receiving user input, and a Textbox output component for displaying the generated text. The interface is then launched, allowing users to interact with the GPT-2 XL model through a web-based UI.
 
-  f. **Postprocess the generated response:** Decoded the generated tensor back into text using the tokenizer, skipping special tokens, for example: tokenizer.decode(output[0], skip_special_tokens=True).
 
 **Results & Performance:**
 
-The system effectively tokenized, encoded, and processed input queries related to deep learning. Using the GPT-2 model, it generated contextually relevant and informative responses that address the user's query. However, the quality of generated responses may vary based on the specificity of the query and the model's knowledge.
+The system effectively tokenized, encoded, and processed input queries related to deep learning. Using the GPT-2 model, it generated contextually relevant and informative responses that address the user's query. However, the quality of generated responses may vary based on the specificity of the query and the model's knowledge. Moreover, the Gradio interface successfully allows users to input text prompts and generates context-aware, coherent responses using the GPT-2 XL model. The model exhibits a strong understanding of context, sentence structure, and semantic meaning, producing impressive results in various use cases. 
 
 **Optimization and Recommendations:**
 
