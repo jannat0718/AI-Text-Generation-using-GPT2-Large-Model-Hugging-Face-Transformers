@@ -19,13 +19,13 @@ The objective of the project is to provide users with assistance in their deep l
   
   There are four main versions of GPT-2 available in the Hugging Face Transformers library:
   
-    a. **gpt2-small:** The smallest version, with 117 million parameters.
+    a. gpt2-small:** The smallest version, with 117 million parameters.
     b. gpt2-medium: The medium-sized version, with 345 million parameters.
     c. gpt2-large: The large version, with 774 million parameters.
     d. gpt2-xl: The largest version, with 1.5 billion parameters.
     
-Each version differs in terms of the number of parameters and overall model size. As the model size increases, it typically results in better performance in terms of text generation quality and contextual understanding. However, larger models also demand more computational resources and can be slower to generate text compared to smaller versions.
-  
+Each version differs in terms of the number of parameters and overall model size. As the model size increases, it typically results in better performance in terms of text generation quality and contextual understanding. However, larger models also demand more computational resources and can be slower to generate text compared to smaller versions. For this project, I used the GPT2-XL model which require more than 12GB RAM to avoid runtime crash.
+
 **Step-by-step Process:**
 
   a. **Install the required package:** Installed the 'transformers' package using the command !pip3 install transformers.
