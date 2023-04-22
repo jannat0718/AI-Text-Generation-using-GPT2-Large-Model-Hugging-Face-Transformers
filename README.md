@@ -45,11 +45,11 @@ The system effectively tokenized, encoded, and processed input queries related t
 
 **Optimization and Recommendations:**
 
-To improve the quality and relevance of the generated responses, we could consider finetuning the GPT-2 model on a domain-specific dataset. Furthermore, adjusting the generation parameters may able to balance diversity and coherence in the responses.
+The GPT-2 XL model's performance is satisfactory in terms of the quality of the generated text. However, we could consider finetuning the GPT-2 model on a domain-specific dataset to improve the quality and relevance of the generated responses. Furthermore, adjusting the generation parameters may able to balance diversity and coherence in the responses.
 
 **Conclusion:**
 
-The project demonstrates how the GPT-2 language model can be leveraged to provide assistance in deep learning inquiries. By processing user queries and generating relevant responses, the system aims to enhance users' understanding of deep learning concepts. To further improve the system's performance, finetuning the GPT-2 model on domain-specific datasets and adjusting generation parameters can be considered.
+The project demonstrates how the GPT2_XL language model can be leveraged to provide assistance in deep learning inquiries. By processing user queries and generating relevant responses, the system aims to enhance users' understanding of deep learning concepts. Moreover,the interactive web-based UI allows users to experience the capabilities of the GPT-2 XL model for text generation, opening up opportunities for further exploration and integration of state-of-the-art NLP models into various applications. To further improve the system's performance, finetuning the GPT2-XL model on domain-specific datasets and adjusting generation parameters can be considered.
 
 **Citations:**
 
